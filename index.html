@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/64f78b7cba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css" />
     <title>Portfolio</title>
 </head>
-<body>
 
+<body>
+    <nav>
+        <ul>
+            <li href="#home">Home</li>
+            <li href="#projects">Projects</li>
+            <li href="#contact">Contact</li>
+        </ul>
+    </nav>
+
+    <div id="home">
+        <div id="home-img"></div>
+        <div id="home-content">
+            <h1>My name is Jeffrey</h1>
+            <p>I major in food and nutrition science. I was a personal trainer, a chef and a nutritionist. Now I am
+                exploring into the tech world, finding my way to be a software engineer. </p>
+        </div>
+    </div>
+
+    <div id="projects">
+        <h2>These are my Projects</h2>
+        <hr>
+        <div id="icons">
+            <!-- frontend -->
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-bootstrap-plain colored"></i>
+            <i class="devicon-sass-original colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-redux-original colored"></i>
+            <i class="devicon-nextjs-original colored"></i>
+            <br>
+            <!-- backend -->
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-express-original-wordmark"></i>
+            <i class="devicon-socketio-original-wordmark colored"></i>
+            <i class="devicon-handlebars-plain-wordmark colored"></i>
+            <i class="devicon-jest-plain colored"></i>
+            <i class="devicon-postgresql-plain-wordmark colored"></i>
+            <i class="devicon-amazonwebservices-plain-wordmark"></i>
+            <br>
+            <!-- tools -->
+            <i class="devicon-github-original colored"></i>
+            <i class="devicon-vscode-plain colored"></i>
+        </div>
+        <hr>
+        <div class="slideShow">
+            <div class="slide">
+                <div class="numbertext">1 / 5</div>
+                <a href="https://github.com/jeffreylaichunghang/dietary-planner">
+                    <img id="slideImage" src="./img/dietary-planner/dp-img1.png">
+                </a>
+                <div class="text">Dietary PLanner</div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+        <div class="slideShow">
+            <div class="slide">
+                <div class="numbertext">1 / 1</div>
+                <a href="https://github.com/jeffreylaichunghang/canvas-application">
+                    <img src="./img/canvas/canvas-img1.png">
+                </a>
+                <div class="text">Canvas App</div>
+
+                <a class="prev" disabled>&#10094;</a>
+                <a class="next" disabled>&#10095;</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h3>I am looking forward to work with you...</h3>
+        <div id="contact-methods">
+            <div>
+                <a href="https://github.com/jeffreylaichunghang">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <span>jeffreylaichunghang</span>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/jeffrey-lai-2280b6165">
+                    <i class="fa-brands fa-linkedin" style="color: #0e47aa;"></i>
+                </a>
+                <span>Jeffrey Lai</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>+852 9071 1079</span>
+            </div>
+            <div>
+                <i class="fa-regular fa-envelope" style="color: #f04005;"></i>
+                <span>laichunghangjeffrey@gmail.com</span>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script src="./index.js"></script>
+
 </html>
